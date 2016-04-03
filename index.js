@@ -17,8 +17,8 @@ getDeps(shrinkwrapPath, (err, deps) => {
     const baddies = getBadDeps(deps, currDeps)
     if (Object.keys(baddies).length) {
       console.log(`cleaning out of date deps: ${Object.keys(baddies).join(',')}`)
-      const folders = Object.keys(baddies).map(dep => path.resolve(packagesPath, `./${dep}/`))
-      return removeBadDeps(folders, err => {
+      const folders = Object.keys(baddies).map((dep) => path.resolve(packagesPath, `./${dep}/`))
+      return removeBadDeps(folders, (err) => {
         if (err) throw err
         console.log('modules successfully removed')
       })
