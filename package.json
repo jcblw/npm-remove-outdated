@@ -1,10 +1,10 @@
 {
   "name": "npm-remove-outdated",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "This is a utility that you can run before npm install to remove outdated dependencies in your node_modules file.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard"
   },
   "bin": {
     "npm-remove-outdated": "./index.js"
