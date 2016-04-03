@@ -4,11 +4,15 @@
   "description": "This is a utility that you can run before npm install to remove outdated dependencies in your node_modules file.",
   "main": "index.js",
   "scripts": {
-    "test": "standard"
+    "test": "standard && nyc tap ./test/*.js"
   },
   "bin": {
     "npm-remove-outdated": "./index.js"
   },
+  "files": [
+    "./index.js",
+    "./lib/*.js"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
