@@ -23,7 +23,7 @@ t.test('the deps object in the second argument to the callback', (test) => {
     test.equal(typeof deps.foo, 'string', 'the value of the key foo in the deps object is a string')
     test.equal(typeof deps.baz, 'string', 'the value of the key baz in the deps object is a string')
     test.equal(deps.foo, '1.0.0', 'the value foo is the correct version')
-    test.equal(deps.baz, '3.0.0', 'the value baz is the correct version')
+    test.equal(deps.baz, '3.1.0', 'the value baz is the correct version')
     test.end()
   })
 })

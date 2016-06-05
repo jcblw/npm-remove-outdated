@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "description": "This is a utility that you can run before npm install to remove outdated dependencies in your node_modules file.",
   "main": "index.js",
-  "repository" : { 
-    "type" : "git", 
-    "url" : "https://github.com/jcblw/npm-remove-outdated.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcblw/npm-remove-outdated.git"
   },
   "scripts": {
     "test": "standard && nyc tap ./test/*.spec.js && nyc report --reporter=text-lcov | coveralls"
@@ -21,7 +21,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "rimraf": "^2.5.2"
+    "rimraf": "^2.5.2",
+    "semver": "^5.1.0"
   },
   "devDependencies": {
     "coveralls": "^2.11.9",
