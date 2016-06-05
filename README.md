@@ -14,10 +14,11 @@ thats it :D
 
     $ npm-remove-outdated && npm install
 
-> Note: that right now this explicitly uses `npm-shrinkwrap.json` files to check dependencies.
+This package can work with either a `npm-shrinkwrap.json` file or a  `package.json` file. When using *shrinkwrap* the version check is an explicit `===` to the version in the package file. When no *shrinkwrap* is found the *package.json* is used. Then the version checking is based off of [semver](https://www.npmjs.com/package/semver)'s satisfies method.
 
 ### Development
 
-This is a fairly new package and has not been battle tested yet, finding bugs, please contribute back or open an issue.
+    npm i
+    npm test
 
 If you contribute plz run `npm test` before making a PR.
