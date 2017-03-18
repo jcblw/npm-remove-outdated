@@ -27,7 +27,7 @@
   "devDependencies": {
     "coveralls": "^2.11.9",
     "nyc": "^8.1.0",
-    "standard": "^7.1.0",
+    "standard": "^9.0.2",
     "tap": "^7.1.0"
   }
 }
